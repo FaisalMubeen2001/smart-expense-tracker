@@ -2,6 +2,9 @@
 
 A comprehensive web application to manage your personal finances with budget alerts, analytics, and data export capabilities.
 
+Working site: https://smart-expense-tracker-personal.netlify.app/
+Check out the link and start managing your own expenses...
+
 ## Features
 
 - **User Setup**: One-time setup to personalize your experience with your name and preferred currency
