@@ -26,12 +26,20 @@ function TransactionList({ expenses, income, currency, onDelete, onNavigate }) {
     }
 
     // Category filter (only for expenses)
-    if (filters.category !== 'all' && transaction.category !== filters.category) {
+    if (
+      transaction.type === 'expense' &&
+      filters.category !== 'all' &&
+      transaction.category !== filters.category
+    ) {
       return false;
     }
 
     // Payment method filter (only for expenses)
-    if (filters.paymentMethod !== 'all' && transaction.paymentMethod !== filters.paymentMethod) {
+    if (
+      transaction.type === 'expense' &&
+      filters.paymentMethod !== 'all' &&
+      transaction.paymentMethod !== filters.paymentMethod
+    ) {
       return false;
     }
 
